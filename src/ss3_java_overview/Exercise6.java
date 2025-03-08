@@ -10,18 +10,18 @@ public class Exercise6 {
         int i = scanner.nextInt();
 
         int sum = i % 10; // lấy đc số hàng đơn vị
-        i = i / 10; // các số còn lại trừ số đã lấy
+        i /= 10; // các số còn lại trừ số đã lấy
         //System.out.println(sum + " "+ i);
-        sum = sum + i % 10;
-        i = i / 10;
+        sum += i % 10;
+        i /= 10;
 
-        sum = sum + i % 10;
-        i = i / 10;
+        sum += i % 10;
+        i /= 10;
 
-        sum = sum + i % 10;
-        i = i / 10;
+        sum += i % 10;
+        i /= 10;
 
-        sum = sum + i;
+        sum += i;
 
         int point = sum % 10;
         System.out.println("Số nút biển số xe bạn là: " + point);
