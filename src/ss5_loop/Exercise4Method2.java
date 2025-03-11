@@ -14,18 +14,18 @@ public class Exercise4Method2 {
         int n = scanner.nextInt();
 
         int distance = 3; // tạo khoảng cách cố định
-        int cout = 0;
+        int count = 0;
 
         for (int i = 2; i <= n; i += 2) {
 
-            cout++; // tăng cout lên 1 đơn vị
+            count++; // tăng cout lên 1 đơn vị
 
-            if (cout == distance) {
-                // nếu cout = distance = 3 thì in giá trị âm và đặt cout về 0
-                System.out.print(-i + "\t ");
-                cout = 0;
+            if (count == distance) {
+                // nếu count = distance = 3 thì in giá trị âm và đặt cout về 0
+                System.out.print(-i + "\t");
+                count = 0;
             } else
-                System.out.print(i + "\t ");
+                System.out.print(i + "\t");
         }
     }
 }

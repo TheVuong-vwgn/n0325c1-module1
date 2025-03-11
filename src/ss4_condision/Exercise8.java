@@ -12,6 +12,10 @@ public class Exercise8 {
 
         System.out.print("Nhập tháng(1-12): ");
         int month = scanner.nextInt();
+        if (month < 0 || month > 12) {
+            System.out.println("Tháng nhập vào không hợp lệ, xin kiểm tra lại!!!");
+            return; // kết thúc phương thức
+        }
 
         System.out.print("Nhập năm: ");
         int year = scanner.nextInt();

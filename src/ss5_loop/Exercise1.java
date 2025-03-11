@@ -14,7 +14,7 @@ public class Exercise1 {
         int n = scanner.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            System.out.print(i + " \t ");
+            System.out.print(i + "\t ");
         }
     }
 }

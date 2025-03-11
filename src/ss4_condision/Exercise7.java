@@ -13,7 +13,9 @@ public class Exercise7 {
         System.out.print("Vui lòng nhập thâm niên công tác: ");
         int seniority = scanner.nextInt();
 
-        int baseSalary = 650000;
+        // final là hằng số không thây đổi
+        // Quy tắc đặt tên cho hằng là viết hoa tất cả chử cái đầu BaseSalary
+        final int BaseSalary = 650000;
         double coefficient;
 
         if (seniority < 12) {
@@ -26,7 +28,7 @@ public class Exercise7 {
             coefficient = 4.5;
         }
 
-        double salary = coefficient * baseSalary;
+        double salary = coefficient * BaseSalary;
         System.out.printf("Lương của nhân viên dựa theo thâm niên " + seniority + " tháng là: " + salary);
     }
 }

@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Exercise6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập vào hai số nguyên: ");
+        System.out.println("Nhập vào ba số nguyên: ");
 
         System.out.print("Nhập a = ");
         double a = scanner.nextDouble();
@@ -41,8 +41,10 @@ public class Exercise6 {
 
                 System.out.println("Phương trình có một nghiệm duy nhất: x = " + x);
             } else {
-                double x1 = (-b + Math.sqrt(delta)) / (2 * a);
-                double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                double sqrtDel = Math.sqrt(delta);
+
+                double x1 = (-b + sqrtDel) / (2 * a);
+                double x2 = (-b - sqrtDel) / (2 * a);
 
                 System.out.println("Phương trình có hai nghiệm: x1 = " + x1 + " và x2 = " + x2);
             }
