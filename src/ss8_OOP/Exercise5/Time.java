@@ -12,21 +12,21 @@ public class Time {
     }
 
     Time(int gio) {
-        this.gio = 7;
+        this.gio = gio;
         phut = 0;
         giay = 0;
     }
 
     Time(int gio, int phut) {
-        this.gio = 7;
-        this.phut = 30;
+        this.gio = gio;
+        this.phut = phut;
         giay = 0;
     }
 
     Time(int gio, int phut, int giay) {
-        this.gio = 7;
-        this.phut = 30;
-        this.giay = 50;
+        this.gio = gio;
+        this.phut = phut;
+        this.giay = giay;
     }
 
     Time(Time other) {
